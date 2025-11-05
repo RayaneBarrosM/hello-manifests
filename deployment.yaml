@@ -1,0 +1,30 @@
+# Define o tipo de recurso
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  # Nome do seu deployment
+  name: hello-app-deployment
+  labels:
+    app: hello-app
+spec:
+  # O ArgoCD (ou a Action) irá alterar este valor (tag)
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: hello-app
+  template:
+    metadata:
+      labels:
+        app: hello-app
+    spec:
+      containers:
+      - name: hello-app-container
+        # IMPORTANTE: Esta imagem será atualizada pela sua GitHub Action!
+        # Use 'latest' como placeholder inicial, mas a Action o substituirá pelo SHA do commit.
+        image: seu-usuario-dockerhub/hello-app:latest 
+        ports:
+        - containerPort: 8000 # A porta que o FastAPI (uvicorn) expõe no container
+        # Você pode adicionar variáveis de ambiente aqui, se necessário
+        env:
+        - name: PYTHONUNBUFFERED
+          value: "1"

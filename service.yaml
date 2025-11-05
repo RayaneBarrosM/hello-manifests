@@ -1,0 +1,20 @@
+# Define o tipo de recurso
+apiVersion: v1
+kind: Service
+metadata:
+  # Nome do seu Service (usado para acesso interno)
+  name: hello-app-service
+  labels:
+    app: hello-app
+spec:
+  # Seleciona os pods com o label app: hello-app
+  selector:
+    app: hello-app 
+  ports:
+    # Porta que o Service expõe internamente
+    - protocol: TCP
+      port: 8080 # Porta que você acessará via 'port-forward' (Etapa 5)
+      targetPort: 8000 # A porta real exposta pelo container (containerPort no Deployment)
+  # Tipo de Service. ClusterIP é o padrão para acesso interno. 
+  # Você usará 'port-forward' para acessar de fora.
+  type: ClusterIP
