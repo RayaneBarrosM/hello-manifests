@@ -5,4 +5,4 @@ resources:
 - service.yaml
 images:
 - name: rayane001/main-python
-  newTag: latest
+  newTag: fdc19f162851c0d74a5a5b9e96f04d2adcb00216
