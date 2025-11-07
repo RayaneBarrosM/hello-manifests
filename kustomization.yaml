@@ -4,7 +4,6 @@ resources:
 - deployment.yaml
 - service.yaml
 images:
-- name: hello-app
-  image: rayane001/hello-app
-  newTag: latest
+  - name: rayane001/hello-app
+    newTag: latest
 
