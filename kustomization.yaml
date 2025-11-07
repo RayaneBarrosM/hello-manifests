@@ -6,5 +6,5 @@ resources:
 images:
 - name: hello-app
   image: rayane001/main-python:latest
-  newTag: 203efc1d2a0273bff0c9324234d23967e8df8b0f
+  newTag: e2792cf91660513a1604db25c332cc1983fbea48
 
