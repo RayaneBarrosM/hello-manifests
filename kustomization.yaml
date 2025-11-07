@@ -4,5 +4,7 @@ resources:
 - deployment.yaml
 - service.yaml
 images:
-- name: rayane001/hello-app
+- name: hello-app
+  image: rayane001/main-python:latest
   newTag: latest
+
