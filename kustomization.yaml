@@ -5,6 +5,6 @@ resources:
 - service.yaml
 images:
 - name: hello-app
-  image: rayane001/main-python:latest
+  image: rayane001/hello-app:latest
   newTag: e2792cf91660513a1604db25c332cc1983fbea48
 
