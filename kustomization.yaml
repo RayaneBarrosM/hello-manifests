@@ -5,4 +5,4 @@ resources:
 - service.yaml
 images:
 - name: SEU_USER_DOCKER/hello-app
-  newTag: latest
+  newTag: da700a6bf4f0b5c32aea17535e8ff3553f91f342
