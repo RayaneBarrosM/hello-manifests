@@ -21,7 +21,7 @@ spec:
       - name: hello-app-container
         # IMPORTANTE: Esta imagem será atualizada pela sua GitHub Action!
         # Use 'latest' como placeholder inicial, mas a Action o substituirá pelo SHA do commit.
-        image: seu-usuario-dockerhub/hello-app:latest 
+        image: rayane001/hello-app:latest 
         ports:
         - containerPort: 8000 # A porta que o FastAPI (uvicorn) expõe no container
         # Você pode adicionar variáveis de ambiente aqui, se necessário
