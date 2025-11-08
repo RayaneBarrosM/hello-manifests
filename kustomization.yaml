@@ -5,4 +5,4 @@ resources:
 - service.yaml
 images:
 - name: rayane001/hello-app
-  newTag: 0e00d0dc80395accc5a0a6e510ad67c62b95079d
+  newTag: 0cf7cb25722faa1b4a647351a1206817a5e39ad1
